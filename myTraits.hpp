@@ -88,22 +88,22 @@ struct is_integral<char32_t> {
         constexpr static bool value = true;
 };
 template <typename T>
-struct is_floating_pont {
+struct is_floating_point {
 	constexpr static bool value = false;
 };
 
 template <>
-struct is_floating_pont<float> {
+struct is_floating_point<float> {
         constexpr static bool value = true;
 };
 
 template <>
-struct is_floating_pont<double> {
+struct is_floating_point<double> {
         constexpr static bool value = true;
 };
 
 template <>
-struct is_floating_pont<long double> {
+struct is_floating_point<long double> {
         constexpr static bool value = true;
 };
 
